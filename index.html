@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Project </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+  </head>
+  <body>
+    <div id="header">
+    <div class="container">
+      <nav>
+        <img src="nature-3082832_1280.webp" class="logo">
+          
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About </a></li>
+         
+          <li><a href="#Portfolio">My Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>HAPPINESS</p>
+        <h1>Hello I'm</span> Shilpa</span><br> </h1> 
+          <p>Social awareness is the ability to take the perspective of 
+          and empathize with others from diverse backgrounds and cultures, to understand social and ethical norms for behaviour, 
+          and to recognize family, school, and community resources and supports.<br>Do you intrested in social awareness which will give you real happiness.<br>Then what are you waiting for just scroll down.</p>
+          
+      </div>
+    </div>
+  </div>
+  <!---------------about------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="WhatsApp Image 2023-01-06 at 2.28.08 PM - Copy.jpeg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p> I am an honest and friendly girl.I like to learn new things and always eager to help a good cause.
+            I place a lot of importance on empathy, 
+            social harmony and cooperation.<br>
+            
+            Strengths:        
+            Dedicated
+            Honest     
+            Self-Critical
+            Team player
+            Flexible 
+            
+            <br>
+            Weakness:
+            Overthinking
+            Stubborn 
+            Too detail oriented 
+            Impatient
+            Easily Overwhelmed
+
+
+
+
+
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('team')">Team members</p>
+           
+            <p class="tab-links" onclick="opentab('activities')">Activities</p>
+          </div>
+      <div class="tab-contents active-tab" id="team">
+        <ul>
+          <li>Soumya</li>
+            
+         <li> <br>Suman</li>
+          <li><br>Aishwarya</li>
+          <li><br>Pooja</li>
+        </ul>
+      </div>
+
+      <div class="tab-contents" id="activities">
+        <ul>
+          <li><span> 1 </span><br>Public Awareness</li>
+          <li><span> 2 </span><br>Asharma visit</li>
+          <li><span> 3 </span>Cleanliness drive<br></li>
+        </ul>
+     
+
+      </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!------------portfolio----->
+  <div id="Portfolio">
+    <div class="container">
+      <h1 class="sub-title">Team work</h1>
+      <div class="work-list">
+      <div class="work">
+        <img src="index2.jpg">
+        <div class="layer">
+          <h3> information about techniqual skill</h3>
+          <p>They were very happy and learnt basic things.</p>
+         
+        </div>
+         
+        </div>
+        <div class="work">
+          <img src="index4.jpg">
+          <div class="layer">
+            <h3>Ashrama visit</h3>
+            <p>Children were very happy about our gifts.</p>
+           
+          </div>
+           
+          </div>
+          <div class="work">
+            <img src="index.jpg">
+            <div class="layer">
+              <h3>Information about good and bad about internet.</h3>
+              <p>They told it was very helpfull to them.</p>
+             
+            </div>
+          </div>
+            </div>
+
+      </div>
+      
+     
+
+        
+        
+    
+  <!------contact-->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          
+          <h1 class="sub-title">Contact me</h1>
+          <p>shilpashankargouda@gmail.com</p>
+          <p>8971474171</p>
+          
+         
+        </div>
+        <div class="contact-right">
+         <form name="form1" value="form1">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" action="ValidateEmail()" required>
+          <textarea name="message"  rows="6" placeholder="Message"></textarea>
+          <button type="submit" class="btn btn2"    onsubmit="ValidateEmail()"> Submit</button>
+         </form>
+        </div>
+
+      </div>
+    </div>
+   
+  </div>
+<script>
+  var tablinks = document.getElementsByClassName('tab-links');
+  var tabcontents = document.getElementsByClassName('tab-contents');
+  function opentab(tabname){
+    for(tablinks of tablinks){
+      tablinks.classList.remove("active-link");
+    }
+    for(tabcontents of tabcontents){
+      tabcontents.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+<script>
+  function ValidateEmail()
+{
+var mailformat = /^w+([.-]?w+)@w+([.-]?w+)(.w{2,3})+$/;
+if(email.value.match(mailformat))
+{
+alert("You have entered a valid email address!");    //The pop up alert for a valid email address
+document.form1.email.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");    //The pop up alert for an invalid email address
+document.form1.email.focus();
+return false;
+}
+}
+</script>
+  </body>
+</html>
+   
